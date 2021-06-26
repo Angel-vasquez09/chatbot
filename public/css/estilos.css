@@ -1,0 +1,185 @@
+.animated {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
+}
+
+
+
+
+.container-chat{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 23px;
+    bottom: 50px;
+}
+
+
+.chat-bot{
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: antiquewhite;
+    position: fixed;
+    right: 32px;
+    cursor: pointer;
+    bottom: 60px;
+    background: #f39200;
+}
+
+.formulario{
+    border: 1px solid black;
+    height: 432px;
+    width: 301px;
+    position: absolute;
+    right: 3px;
+    bottom: 0px;
+    border-radius: 20px 20px 0;
+}
+
+.header{
+    height: 55px;
+    background: #f39200;
+    border-radius: 20px 20px 0 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamaño-input{
+    height: 48px !important;
+}
+
+/* Clases de eventos click */
+.display{
+    display: none;
+}
+
+.largo{
+    height: 373px !important;
+}
+
+.mostrar{ 
+  display: none;
+}
+
+
+
+
+
+
+.chat-list {
+    margin: 0px;
+    padding: 0px; 
+    overflow-y: scroll;
+    height: 295px;
+}
+    .chat-list li {
+      list-style: none;
+      margin-top: 30px; 
+    }
+      .chat-list li .chat-img {
+        display: inline-block;
+        width: 45px;
+        vertical-align: top; 
+      }
+        .chat-list li .chat-img img {
+          width: 45px !important;
+          width:45px !important;
+          border-radius: 100%; 
+          object-fit: cover !important;
+        }
+  
+      .chat-list li .chat-content {
+        text-align: right;
+        display: inline-block;
+        max-width: 60%;
+        word-break: break-all;
+      }
+
+      
+      .chat-list li .chat-content .bg-light-info{
+        text-align: left;
+        background: #5059624d;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .chat-list li .chat-content .bg-light-inverse{
+        background: #f39201;
+        border-radius: 5px;
+        padding: 10px;
+      }
+        .chat-list li .chat-content h5 {
+          color: #99abb4; 
+        }
+
+        .chat-list li .chat-content .box {
+          display: inline-block;
+          margin-bottom: 10px;
+          color: #263238; 
+        }
+
+      .chat-list li .chat-time {
+        display: inline-block;
+        text-align: right;
+        font-size: 13px;
+        color: #99abb4; 
+    }
+
+      .chat-list li.odd .chat-content {
+        text-align: right;
+        
+    }
+      .chat-list li.odd .box {
+        clear: both; 
+    }
+
+      .chat-list li.odd + .odd {
+        margin-top: 0px; 
+    }
+
+      .chat-list li.reverse {
+        text-align: right; 
+    }
+        .chat-list li.reverse .chat-time {
+          text-align: left; 
+        }
+
+        .chat-list li.reverse .chat-content {
+          padding-left: 0px;
+          padding-right: 15px; 
+        }
