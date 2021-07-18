@@ -1,0 +1,258 @@
+{{!-- <div class="container-chat">
+
+    <div id="chat-bot" class="chat-bot">
+        <i class="far fa-comment-dots"></i>
+    </div>
+
+    <div id="formulario" class="formulario display animated fadeIn">
+        <div class="header">
+            <div class="row h-100">
+                <div class="col-3 logo">
+                    <img width="45px"
+                        src="https://atlas.curn.edu.co/public/web/images/identidad_corporativa/LOGO-CURN-NARANJA.png"
+                        alt="">
+                </div>
+                <div class="col-6 p-0 logo">
+                    <h4 class="text-center">Chat en linea</h4>
+                </div>
+                <div class="col-3 logo">
+                    <i id="close" class="fas fa-times"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="body pr-1 pl-1 pt-0 pb-3 largo">
+
+            <!-- CHAT CON EL USUARIO -->
+            <ul class="chat-list p-20 mostrar" id="divChatbox">
+
+                <li class="animated fadeIn">
+                    <div class="chat-img"><img src="https://portal.curn.edu.co/img/logo.png" alt=""></div>
+                    <div class="chat-content">
+                        <div class="box bg-light-info">
+                            <p>
+                                Bienvenido al servicio de atención en línea Uninúñez
+
+                                Hola luis angel
+
+                                Cuéntanos que tipo de usuario eres:
+
+                                1 - Aspirante
+                                2 - Estudiante
+
+                                Digita una de las opciones
+
+                                Si quieres comunicarte con un 🎧asesor, escribe la palabra asesor
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="reverse animated fadeIn">
+                    <div class="chat-content">
+                        <div class="box bg-light-inverse">
+                            Usuario
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+            <form id="formEnviar" class="mostrar">
+                <div class="card-body b-t">
+                    <div class="row">
+                        <!-- CAJA DE ESCRIBIR MENSAJE -->
+                        <div class="col-8">
+                            <input autofocus type="false" autocomplete="off" id="txtMensaje"
+                                placeholder="Escribe tu mensaje aquí" class="form-control b-0">
+                        </div>
+
+
+                        <!-- BOTON PARA GRABAR AUDIO -->
+                        <div class="col-2 text-right d-flex align-items-center">
+                            <div style="
+                            border: 0;
+                            background: white;
+                            ">
+                                <i class="fas fa-location-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-2 text-right d-flex align-items-center">
+                            <button type="submit" style="
+                            border: 0;
+                            background: white;
+                            ">
+                                <i class="fas fa-location-arrow"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- FIN DEL CHAT CON EL USUARIO -->
+
+
+
+
+            <!-- FORMULARIO DE REGISTRO -->
+            <form id="formRegistro" class="p-3">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control tamaño-input" id="nombre" placeholder="Nombre">
+                    <label for="floatingInput">Nombre*</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control tamaño-input" id="email" placeholder="Email">
+                    <label for="floatingInput">Email*</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control tamaño-input" id="identificacion"
+                        placeholder="Identificacion">
+                    <label for="floatingInput">Identificacion*</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control tamaño-input" id="telefono" placeholder="Telefono">
+                    <label for="floatingInput">Telefono*</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control tamaño-input" id="comentario" placeholder="Comentario">
+                    <label for="floatingInput">Comentario</label>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" style="font-size: 10px;" for="invalidCheck">
+                                Estoy de acuerdo con las politicas de manejo de datos
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div>
+                            <button type="submit" style="
+                            border: 0;
+                            background: white;
+                            ">
+                                <i class="fas fa-location-arrow"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+    </div>
+
+</div> --}}
+<div class="container h-100">
+
+
+        <div id="burbuja" class="rounded-circle circulo fondo">
+
+        </div>
+
+        <div id="chat-bot" class="divChat rounded animated fadeIn display" >
+            <!-- CABECERA DEL CHAT -->
+            <div class="cabecera rounded-top">
+                <div class="box">
+                    <div class="row w-100 h-100">
+                        <div class="col-10 ">
+                            <div class="pl-2 w-100 h-100 d-flex align-items-center">
+                                <img class="img-logo" src="https://portal.curn.edu.co/img/logo.png" width="45px" class="rounded-circle" alt="...">
+                                <div class="w-100 text-center">Chat en linea</div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+                                <i class="icon-close bi bi-dash-lg"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FORMULARIO DE REGISTRO -->
+            <div id="divRegistroBot" class="container pt-2 registro">
+                <form id="formRegistro" class="p-3">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control tamaño-input" id="nombre" value="Luis Angel" placeholder="Nombre">
+                        <label for="floatingInput">Nombre*</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control tamaño-input" id="email" value="angel@hotmail.com" placeholder="Email">
+                        <label for="floatingInput">Email*</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control tamaño-input" id="identificacion"
+                            placeholder="Identificacion" value="1234567891011">
+                        <label for="floatingInput">Identificacion*</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control tamaño-input" id="telefono" placeholder="Telefono" value="3016200769">
+                        <label for="floatingInput">Telefono*</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control tamaño-input" id="comentario" placeholder="Comentario">
+                        <label for="floatingInput">Comentario</label>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" style="font-size: 10px;" for="invalidCheck">
+                                    Estoy de acuerdo con las politicas de manejo de datos
+                                </label>
+    
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div>
+                                <button type="submit" style="
+                                border: 0;
+                                background: white;
+                                ">
+                                    <i class="fas fa-location-arrow"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- FIN DEL FORMULARIO DE REGISTRO -->
+            <!-- CURPO DEL CHAT -->
+            <div id="divBody" class="body display animated fadeIn">
+                <div id="chatmjs" class="container pt-2">
+                    <!-- MENSAJE DEL BOT -->
+
+                    <!-- MENSAJE DEL USUARIO -->
+                    {{!-- <div id="cargando" class="loading">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div> --}}
+                    
+                </div>
+                
+            </div>
+            <!-- PIE DE PAGINA DEL CHAT -->
+            <div id="divEnviarMjs" class="formEnviar rounded-bottom animated fadeIn display">
+                <div class="box">
+                    <form id="formMjs" class="w-100 h-100">
+                        <div class="p-2 d-flex">
+                            <input onfocus="escribiendo()" onblur="notEscribiendo()" type="text" id="mjs" name="mjs" class="chat-input pl-3" placeholder="Ingrese un mensaje">
+                            <button type="text" class="chat-audio">
+                                <i class="tamaño-icon bi bi-mic-fill color"></i>
+                            </button>
+                            <button  type="submit" class=" chat-submit">
+                                <i class="tamaño-icon bi bi-arrow-right-circle-fill"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+

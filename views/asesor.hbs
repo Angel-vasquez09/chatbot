@@ -1,0 +1,85 @@
+{{> layouts/cabecera }}
+
+
+<div class="px-4 pb-4">
+    <div class="row rounded-lg overflow-hidden shadow">
+        <!-- Users box-->
+        <div class="d-none d-md-block col-md-4 px-0">
+            <div class="bg-white">
+
+                <div class="bg-gray px-4 py-2 bg-light">
+                    <p class="h5 mb-0 py-1">Estudiantes</p>
+                </div>
+
+                <div class="messages-box">
+                    <div id="inicio" class="inicio">
+                        <strong>Chat Curn</strong>
+                    </div>
+                    <div id="divUsuarios" class="list-group rounded-0 animated fadeIn">
+                    {{!-- LISTA DE ESTUDIANTES REGISTRADOS --}}
+                        {{!-- <a onclick="user()" class="list-group-item list-group-item-action active text-white rounded-0">
+                            <div class="media"><img
+                                    src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg"
+                                    alt="user" width="50" class="rounded-circle">
+                                <div class="media-body ml-4">
+                                    <div class="d-flex align-items-center justify-content-between mb-1">
+                                        <h6 class="mb-0">Jason Doe</h6><small class="small font-weight-bold">25
+                                            Dec</small>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </a> --}}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{!-- Imagen de la curn --}}
+        <div id="antes" class="col-12 col-md-8 px-0 d-flex align-items-center animated fadeIn">
+            <img width="100%" class="" src="https://atlas.curn.edu.co/public/web/images/identidad_corporativa/LOGO-CURN-NARANJA.png" alt="">
+        </div>
+
+        <!-- Chat Box-->
+        <div id="chatEstudiante" class="d-none col-12 col-md-8 px-0 animated fadeIn">
+            <div id="divMensajes" class="px-4 py-5 chat-box bg-white">
+                <!-- MENSAJE DEL ASESOR -->
+
+                <!-- MENSAJE DEL ESTUDIANTE-->
+                
+
+            </div>
+
+            <!-- FORMULARIO DE ENVIAR MENSAJE -->
+            <form id="formMjs" class="bg-light">
+
+                <div class="input-group">
+                    <div class="row w-100">
+                        <div class="col-10 col-sm-11">
+                            <input type="text" onfocus="escribiendo()" onblur="notEscribiendo()" id="txtMensaje" class="shadow rounded-pill w-100 btn-chat" placeholder="Type a message" aria-describedby="button-addon2"
+                            class="form-control rounded-0 border-0 py-4 bg-light">
+                        </div>
+                        <div class="col-2 col-sm-1 p-0">
+                            <div class="input-group-append d-flex align-items-center h-100">
+                                <button id="button-addon2" 
+                                        type="submit" 
+                                        class=" btn btn-link rounded-circle bg-primary p-0 m-0" style="width: 3rem; height: 3rem;"> 
+                                    <i class="fa fa-paper-plane text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="./socket.io/socket.io.js"></script>
+<script src="js/asesor.js"></script>
+{{> layouts/piePagina }}

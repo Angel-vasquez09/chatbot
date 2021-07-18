@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
 .animated {
     -webkit-animation-duration: 0.4s;
     animation-duration: 0.4s;
@@ -27,6 +29,269 @@
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn
 }
+
+.fondo{
+  background-image: url('https://img.icons8.com/office/452/chatbot.png');
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.circulo{
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    bottom  : 11px;
+    right   : 15px;
+    cursor: pointer;
+    transition: height 1s,width 1s, border-radius 1s;
+}
+
+.animacion-circulo{
+  width   : 0rem;
+  height  : 0rem;
+}
+
+.icon{
+  position: absolute;
+  right: 46px;
+  height: 70px;
+  width: 50px;
+  border-radius: 26px;
+  display: flex;
+  justify-content: center;
+  padding-top: .5rem;
+  top: 72px;
+  border: 1px solid black;
+  cursor: pointer;
+  box-shadow: sandybrown;
+  background: white;
+}
+
+.divChat{
+    width   : 0rem;
+    height  : 0rem;
+    position: absolute;
+    bottom  : 11px;
+    right   : 15px;
+    border: 0.1px outset rgba(0, 0, 0, 0.10);
+    z-index: 1000;
+    transition: height 1s,width 1s;
+}
+.animacion-divchat{
+  width: 20rem !important;
+  height: 34rem !important;
+}
+
+.cabecera{
+  width : 100%;
+  height: 15%;
+  background: #ff9c00;
+  transition: height .2s;
+  
+}
+.animacion-cabecera{
+  height: 0;
+}
+.img-logo{
+  margin-left: .5rem !important;
+}
+.icon-close, .icon-min{
+  cursor: pointer;
+}
+
+.registro{
+  width: 100%;
+  height: 85%;
+  font-size: 16px;
+  background: #ececec;
+}
+.registro #formRegistro{
+  height: 100%;
+}
+
+.body{
+    width     : 100%;
+    height    : 70%;
+    overflow-y: scroll;
+    font-size: 16px !important;
+    background: #ececec;
+    transition: height 1s;
+}
+.animacion-body{
+  height: 0;
+}
+.usuario{
+  background: #f29400 !important;
+}
+.formEnviar{
+    width   : 100%;
+    height  : 15%;
+    padding : 12px;
+    transition: height 1s;
+    background: white;
+}
+.animacion-enviar{
+  height: 0;
+  display: none;
+}
+.chat-input{
+    height: 3rem;
+    padding-right : 21%;
+    background    : #FFFFFF;
+    width         : 100%;
+    resize        : none;
+    outline       : none;
+    border        : 1pt solid rgba(204,204,204,0.48);
+    color         : #888;
+    box-sizing    : border-box;
+    word-wrap     : break-word;
+    border-radius : 49px;
+    padding-left  : 1.3rem;
+}
+.chat-audio{
+  position    : absolute !important;
+  right       : 15% !important;
+  background  : transparent !important;
+  box-shadow  : none !important;
+  border      : none !important;
+  border-radius : 50% !important;
+  color         : rgb(var(--colorsend)) !important;
+  margin-top: .5rem;
+}
+.chat-audio .color{
+  color: #f29400;
+}
+.tamaño-icon{
+  font-size: 1.3rem !important;
+}
+.chat-submit{
+    position  : absolute;
+    right     : 7%;
+    border    : none;
+    background: transparent;
+    color     : #f29400;
+    margin-top: .5rem;
+}
+.box{
+  box-sizing: border-box;
+  width     : 100%;
+  /* border    : 1px solid black; */
+  height    : 100%;
+}
+
+
+/* Esperando mensaje */
+.loading {
+  display: flex;
+}
+.loading .dot {
+  position: relative;
+  width: .5rem;
+  height: .5rem;
+  margin: 0.4rem;
+  border-radius: 50%;
+}
+.loading .dot::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  animation: wave 2s ease-out infinite;
+}
+.loading .dot:nth-child(1) {
+  background: #f29402;
+}
+.loading .dot:nth-child(1)::before {
+  animation-delay: 0.2s;
+}
+.loading .dot:nth-child(2) {
+  background: #363635;
+}
+.loading .dot:nth-child(2)::before {
+  animation-delay: 0.4s;
+}
+.loading .dot:nth-child(3) {
+  background: #00897b;
+}
+.loading .dot:nth-child(3)::before {
+  animation-delay: 0.6s;
+}
+.loading .dot:nth-child(4) {
+  background: #0f52ba;
+}
+.loading .dot:nth-child(4)::before {
+  animation-delay: 0.8s;
+}
+.loading .dot:nth-child(5) {
+  background: #000080;
+}
+.loading .dot:nth-child(5)::before {
+  animation-delay: 1s;
+}
+
+@keyframes wave {
+  50%, 75% {
+    transform: scale(2.5);
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+
+/* ESTILOS DEL CUADRO DEL CHAT BOT */
+.mjs-bot{
+  font-size: 13px !important;
+}
+
+
+.fondo{
+  background: #4a4a49;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,6 +361,72 @@
 .mostrar{ 
   display: none;
 }
+
+
+/* 
+*********************************************************
+*  ESTILOS DEL CHAT DE LOS ASESORES
+*********************************************************
+ */
+ ::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 5px;
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 1em;
+  background-color: #ddd;
+  outline: 1px solid slategrey;
+  border-radius: 1rem;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.messages-box,
+.chat-box {
+  height: 510px;
+  overflow-y: scroll;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.btn-chat{
+  border: 1px solid #0d6efd;
+  padding-left: 1rem;
+  height: 3rem;
+  outline: none;
+}
+
+.inicio{
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  background: #f39200;
+}
+/* 
+*********************************************************
+* FIN DE ESTILOS DEL CHAT DE LOS ASESORES
+*********************************************************
+ */
+
+
+
 
 
 
@@ -183,3 +514,175 @@
           padding-left: 0px;
           padding-right: 15px; 
         }
+
+
+
+/* Estilos de formulario de registro y de login */
+
+:root {
+  --main-bg-color: brown;
+  --body-bg: #c1bdba;
+  --form-bg: #13232f;
+  --white: #ffffff;
+  --main: #1ab188;
+  --main-light: lighten($main,5%);
+  --main-dark: darken($main,5%);
+  --gray-light: #a0b3b0;
+  --gray: #ddd;
+  --thin: 300;
+  --normal: 400;
+  --bold: 600;
+  --br: 4px;
+}
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+  background: var(--body-bg);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:var(--main);
+  transition:.5s ease;
+  
+}
+a::hover {
+  color:var(--main-dark);
+}
+
+.form {
+  background:rgba(var(--form-bg),.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:var(--br);
+  box-shadow:0 4px 10px 4px rgba(var(--form-bg),.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+}
+
+.tab-group::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.tab-group li a {
+  display:block;
+  text-decoration:none;
+  padding:15px;
+  background:rgba(var(--gray-light),.25);
+  color:var(--gray-light);
+  font-size:20px;
+  float:left;
+  width:50%;
+  text-align:center;
+  cursor:pointer;
+  transition:.5s ease;
+}
+.tab-group li a::hover {
+  background:var(--main-dark);
+  color:var(--white);
+}
+
+.tab-group .active a {
+  background:var(--main);
+  color:var(--white);
+}
+
+.tab-content {
+  display:none;
+}
+
+
+h1 {
+  text-align:center;
+  color:var(--white);
+  font-weight:var(--thin);
+  
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  
+}
+label.active .req {
+  opacity:0;
+}
+
+label.highlight {
+	color:var(--white);
+}
+
+
+
+
+textarea {
+  border:2px solid var(--gray-light);
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+.top-row ::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float:left;
+  width:48%;
+  margin-right:4%;
+}
+.top-row > div::last-child { 
+  margin:0;
+}
+
+.button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:var(--bold);
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:var(--main);
+  color:var(--white);
+  transition:all.5s ease;
+  -webkit-appearance: none;
+
+}
+.button::hover{
+  background:var(--main-dark);
+} 
+.button::focus{
+  background:var(--main-dark);
+}
+
+.button-block {
+  display:block;
+  width:100%;
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}

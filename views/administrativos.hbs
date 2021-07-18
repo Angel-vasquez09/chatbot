@@ -1,0 +1,102 @@
+{{> layouts/cabecera  }}
+    
+<div class="form">
+
+    <ul class="tab-group">
+        <li id="li-sing" class="tab active"><a id="sing" href="#signup">Sign Up</a></li>
+        <li id="li-log"  class="tab">       <a id="log" href="#login">Log In</a></li>
+    </ul>
+    
+    <div >
+        
+        {{!-- FORMULARIO DE REGISTRO --}}
+        <div id="signup" >   
+            
+            <form>
+            
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Correo</label>
+                        </div>
+                    </div>
+                
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Password</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Nombres</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Apellidos</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Cedula</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="button button-block"/>Get Started</button>
+            
+            </form>
+
+        </div>
+
+        {{!-- FORMULARIO DE LOGIN --}}
+        <div id="login" class="tab-content">   
+            
+            <form id="formLogin">
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                            <label for="floatingInput">
+                                Email
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <label for="floatingInput">Password</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="button button-block"/>Log In</button>
+            
+            </form>
+
+        </div>
+        
+    </div><!-- tab-content -->
+    
+</div> <!-- /form -->
+
+
+<script src="js/login-register.js"></script>
+{{> layouts/piePagina  }}
